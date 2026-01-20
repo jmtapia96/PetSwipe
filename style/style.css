@@ -1,0 +1,12 @@
+header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #0097b2;
+}
+
+header img {
+    height: 90px; /* Ajusta el tamaño según necesites */
+    width: auto;
+}
+
