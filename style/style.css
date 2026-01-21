@@ -12,5 +12,10 @@ header img {
 
 footer{
     background-color: #faf3e0;
-    text-align: right
+    text-align: left
+
+}
+
+footer img{
+    width: 15%;
 }
