@@ -5,8 +5,8 @@ btn.addEventListener('click', () => {
     sidebar.classList.toggle('collapsed');
     
     if (sidebar.classList.contains('collapsed')) {
-        btn.innerText = '☰';
+        btn.innerText = '≡';
     } else {
-        btn.innerText = '✕';
+        btn.innerText = 'X';
     }
 });
