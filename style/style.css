@@ -6,10 +6,45 @@ header {
 }
 
 header img {
-    height: 90px; /* Ajusta el tamaño según necesites */
+    height: 90px;
     width: auto;
 }
 
+.inicio {
+    background-color: bisque;
+    padding: 20px;
+    text-align: center;
+}
+
+.valores {
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+}
+
+.valor {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.seguridad {
+    background-color: red;
+}
+
+.transparencia {
+    background-color: #4b2e2e;
+}
+
+.dedicacion {
+    background-color: #c49a6c;
+}
 footer{
     background-color: #faf3e0;
     text-align: left
@@ -18,4 +53,6 @@ footer{
 
 footer img{
     width: 15%;
+}
+    text-align: right
 }
