@@ -47,5 +47,12 @@ header img {
 }
 footer{
     background-color: #faf3e0;
+    text-align: left
+
+}
+
+footer img{
+    width: 15%;
+}
     text-align: right
 }
