@@ -135,3 +135,43 @@ footer{
 .content {
     padding: 40px;
 }
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    background-image: url("../img/animales_index.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    padding-left: 60px;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+
+.hero-contenido {
+    position: relative;
+    color: black;
+    max-width: 500px;
+}
+
+.hero-contenido h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.hero-btn:hover {
+    background-color: #e0e0e0;
+}
