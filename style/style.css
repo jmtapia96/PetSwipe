@@ -215,3 +215,25 @@ footer{
 .protectoras-btn:hover {
     background-color: #e0e0e0;
 }
+
+#btn-subir {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background-color: #0097b2;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1200;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#btn-subir:hover {
+    background-color: #007a90;
+    transform: scale(1.1);
+}
