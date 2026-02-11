@@ -237,3 +237,91 @@ footer{
     background-color: #007a90;
     transform: scale(1.1);
 }
+
+.bloque-animales {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e4c9a6;
+    padding: 40px;
+    gap: 40px;
+}
+
+.texto {
+    flex: 1;
+    font-size: 18px;
+}
+
+.imagen {
+    flex: 1;
+    text-align: right;
+}
+
+.imagen img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+    background-color: #0e8fa3;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 90px;
+}
+
+.footer-logo h2 {
+    margin: 5px 0 0;
+}
+
+.footer-contacto {
+    text-align: left;
+}
+
+.footer-contacto h3 {
+    margin-bottom: 10px;
+}
+
+.footer-contacto p {
+    margin: 5px 0;
+}
+
+.footer-copy {
+    max-width: 300px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-copy {
+        max-width: 100%;
+    }
+}
+
+.contacto-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;            
+    justify-content: flex-start; 
+}
+
+.contacto-item img {
+    width: 40px;   
+    height: auto;
+}
+s
