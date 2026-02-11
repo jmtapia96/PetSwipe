@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
 body {
     margin: 0;
     font-family: 'League Spartan', sans-serif;
@@ -321,7 +329,6 @@ footer{
 }
 
 .contacto-item img {
-    width: 40px;   
+    width: 20px;
     height: auto;
 }
-s
