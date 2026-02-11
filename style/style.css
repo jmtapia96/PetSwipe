@@ -332,3 +332,55 @@ footer{
     width: 20px;
     height: auto;
 }
+
+.texto-columna {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.btn-animales {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0097b2;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-animales:hover {
+    background-color: #007a90;
+    transform: scale(1.05);
+}
+
+.texto-columna p {
+    font-size: 18px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .bloque-animales {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .texto-columna {
+        align-items: center;
+    }
+
+    .imagen {
+        text-align: center;
+        width: 100%;
+    }
+
+    .imagen img {
+        width: 100%;
+        max-width: 400px;
+    }
+}
