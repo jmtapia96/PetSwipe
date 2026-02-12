@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetSwipe - Registrar mascota</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <button id="btn-subir">↑</button>
+
+    <aside class="sidebar collapsed" id="sidebar">
+        <div class="sidebar-header">
+            <span class="logo">PetSwipe</span>
+        </div>
+        <nav class="menu">
+            <a href="#" class="item"><span class="icon">#</span> <span class="text">Inicio</span></a>
+            <a href="#" class="item"><span class="icon">#</span> <span class="text">Perfil</span></a>
+            <a href="#" class="item"><span class="icon">#</span> <span class="text">Animales</span></a>
+            <a href="#" class="item"><span class="icon">#</span> <span class="text">Matches</span></a>
+            <a href="#" class="item"><span class="icon">#</span> <span class="text">Cerrar Sesion</span></a>
+        </nav>
+    </aside>
+    <div class="main-wrapper">
+    <header>
+        
+        <div class="header-logos">
+                <img src="img/logo_perro.png" alt="Logo de la web">
+                <img src="img/logo_nombre.png" alt="PetSwipe">
+        </div>
+            <button id="toggle-btn">≡</button>
+    </header>
+
+    <section class="suscripcion">
+        <div class="suscripcion-texto">
+            <h3>Destaca tus adopciones con nuestro plan de suscripción publicitaria</h3>
+            <p>
+                Animales destacados en el inicio<br>
+                Aparición prioritaria en el carrusel<br>
+                Etiqueta de centro verificado
+            </p>
+        </div>
+
+        <img src="img/logo_perro.png" class="suscripcion-img" alt="Perro feliz">
+
+        <h2 class="precio">25,99€/mes</h2>
+    </section>
+
+    <section class="zona-form">
+        <div class="formulario">
+            <form>
+                <label>Nombre mascota</label>
+                <input type="text" name="nombre" required>
+
+                <label>Edad</label>
+                <input type="number" name="edad" required>
+
+                <label>Raza</label>
+                <input type="text" name="raza">
+
+                <label>Sexo</label>
+                <select name="sexo">
+                    <option value="macho">Macho</option>
+                    <option value="hembra">Hembra</option>
+                </select>
+
+                <label>Enlace a cartilla médica</label>
+                <input type="url" name="cartilla">
+
+                <label>Vacunas recibidas</label>
+                <input type="text" name="vacunas">
+
+                <label>Pareja</label>
+                <input type="text" name="pareja">
+
+                <button type="submit" class="btn-registrar">Registrar mascota</button>
+            </form>
+        </div>
+
+        <aside class="tarjeta-lateral">
+            <img src="img/perro_perfil.jpg" alt="Foto mascota">
+            <p>Cambia logo mascota</p>
+            <p>¿Tienes una cuenta?<br><a href="#">Inicia sesión</a></p>
+        </aside>
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+            <img src="img/logo_PetSwipe.png" alt="Logo PetSwipe">
+        </div>
+
+        <div class="footer-contacto">
+            <h3>CONTACTO</h3>
+
+            <p class="contacto-item">
+                <img src="img/logo facebook (1).png" alt="Facebook">
+                    petswipe 
+            </p>
+            <p class="contacto-item">
+                <img src="img/logo ig (2).png" alt="Instagram">
+                    @petswipeoficial 
+            </p>
+            <p class="contacto-item">
+                <img src="img/logo gmail (2).png" alt="Gmail">
+                    petswipe@gmail.com 
+            </p>
+        </div>
+
+        <div class="footer-copy">
+            <p>
+                ©2025 Todos los derechos reservados. Petswipe® es una marca registrada de
+                1º DAW B Group. Petswipe y su logotipo son marcas comerciales de 1º DAW B.
+            </p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
