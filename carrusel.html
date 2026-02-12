@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetSwipe - Animales</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <button id="btn-subir">↑</button>
+
+    <aside class="sidebar collapsed" id="sidebar">
+        <div class="sidebar-header">
+            <span class="logo">PetSwipe</span>
+        </div>
+        <nav class="menu">
+            <a href="index.html" class="item"><span class="icon">#</span> <span class="text">Inicio</span></a>
+            <a href="perfilanimal.html" class="item"><span class="icon">#</span> <span class="text">Perfil</span></a>
+            <a href="carrusel.html" class="item"><span class="icon">#</span> <span class="text">Animales</span></a>
+            <a href="matches.html" class="item"><span class="icon">#</span> <span class="text">Matches</span></a>
+            <a href="#" class="item"><span class="icon">#</span> <span class="text">Cerrar Sesion</span></a>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header>
+            <div class="header-logos">
+                <img src="img/logo_perro.png" alt="Logo">
+                <img src="img/logo_nombre.png" alt="PetSwipe">
+            </div>
+            <button id="toggle-btn">≡</button>
+        </header>
+
+        <main class="carrusel-container">
+            
+            <div class="search-box">
+                <div class="search-input-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="input-busqueda" placeholder="Escribe aquí">
+                    <ul class="search-suggestions" id="sugerencias">
+                        <li>Sevilla</li>
+                        <li>Protectora 1</li>
+                        <li>Protectora 2</li>
+                        <li>Madrid</li>
+                        <li>Barcelona</li>
+                        <li>Valencia</li>
+                    </ul>
+                </div>
+            </div>
+
+            <section class="swipe-section">
+                <h2 class="swipe-text">DESLIZA!</h2>
+                
+                <div class="deck-container">
+                    <div class="swipe-card card-back"></div>
+                    
+                    <div class="swipe-card" id="card-actual">
+                        <img src="img/perro2.jpeg" alt="Mascota" class="pet-photo">
+                        <div class="card-content">
+                            <p class="info-link">Información animal</p>
+                            <div class="action-buttons">
+                                <button class="btn-action btn-dislike">✖</button>
+                                <button class="btn-action btn-like">❤️</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="protectora-name">Protectora de este animal: ...</p>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer-logo">
+                <img src="img/logo_PetSwipe.png" alt="Logo PetSwipe">
+            </div>
+
+            <div class="footer-contacto">
+                <h3>CONTACTO</h3>
+                <p class="contacto-item">
+                    <img src="img/logo facebook (1).png" alt="FB"> petswipe 
+                </p>
+                <p class="contacto-item">
+                    <img src="img/logo ig (2).png" alt="IG"> @petswipeoficial 
+                </p>
+                <p class="contacto-item">
+                    <img src="img/logo gmail (2).png" alt="Gmail"> petswipe@gmail.com 
+                </p>
+            </div>
+
+            <div class="footer-copy">
+                <p>
+                    ©2025 Todos los derechos reservados. Petswipe® es una marca registrada de
+                    1º DAW B Group. [cite: 146, 167]
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

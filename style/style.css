@@ -572,3 +572,168 @@ footer{
         flex-direction: column;
     }
 }
+
+/* --- ESTILOS CARRUSEL / SWIPE --- */
+
+.carrusel-container {
+    background-color: #faf3e0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+}
+
+/* Buscador [cite: 136] */
+.search-box {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.search-input-wrapper {
+    background: white;
+    border: 2px solid #333;
+    border-radius: 25px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.search-input-wrapper input {
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.search-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 2px solid #333;
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+    list-style: none;
+    padding: 0;
+    display: none; /* Se activa con JS */
+    z-index: 10;
+}
+
+.search-suggestions li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+/* Tarjeta Swipe [cite: 138, 161] */
+.swipe-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.swipe-text {
+    font-family: 'cursive', serif;
+    font-size: 2.5rem;
+    transform: rotate(-10deg);
+    margin-bottom: 20px;
+}
+
+.swipe-card {
+    width: 320px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 10px 10px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: relative;
+    transform: rotate(2deg); /* Efecto visual del mockup */
+}
+
+.pet-photo {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.info-link {
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+.btn-action {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-dislike { background-color: #ff4d4d; }
+.btn-like { background-color: #ff6b81; }
+
+.protectora-name {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Contenedor relativo para apilar las cartas */
+.deck-container {
+    position: relative;
+    width: 320px;
+    height: 480px; /* Ajusta según el alto de tus fotos */
+    margin-bottom: 20px;
+}
+
+/* Estilo base de todas las tarjetas en el carrusel */
+.swipe-card {
+    position: absolute;
+    width: 100%;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* Tarjeta principal (la de delante) */
+#card-actual {
+    z-index: 2;
+    transform: rotate(2deg); /* Ligera inclinación como en el mockup [cite: 138] */
+}
+
+/* Tarjeta de detrás (decorativa) */
+.card-back {
+    z-index: 1;
+    height: 100%;
+    background-color: #e0e0e0; /* Un gris claro para diferenciarla */
+    transform: rotate(-3deg) translate(-10px, -5px); /* Inclinación opuesta */
+    border: 1px solid #ddd;
+}
+
+/* Ajuste del texto de la protectora para que no se solape */
+.protectora-name {
+    position: relative;
+    z-index: 3;
+    margin-top: 10px;
+}
