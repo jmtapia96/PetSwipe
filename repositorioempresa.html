@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro Empresa</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="formulario">
+        <h2>Regístrate</h2>
+
+        <input type="text" placeholder="Nombre de empresa">
+        <input type="email" placeholder="Correo electrónico">
+        <input type="password" placeholder="Contraseña">
+        <input type="password" placeholder="Confirmar contraseña">
+
+        <h3>Datos de empresa</h3>
+
+        <input type="text" placeholder="Dirección">
+        <input type="number" placeholder="Año de creación">
+        <input type="text" placeholder="Número de registro oficial">
+
+        <h3>Tipo de entidad</h3>
+        <div class="estado">
+            <label><input type="radio" name="tipoEntidad"> Protectora</label>
+            <label><input type="radio" name="tipoEntidad"> Refugio</label>
+            <label><input type="radio" name="tipoEntidad"> Asociación</label>
+            <label><input type="radio" name="tipoEntidad"> Otro</label>
+        </div>
+
+        <input type="text" placeholder="Si seleccionas 'Otro', especifica aquí">
+
+        <input type="tel" placeholder="Teléfono de contacto">
+        <input type="text" placeholder="Redes sociales">
+
+        <h3>Tipos de animales en disposición</h3>
+
+ 
+        <div class="contador">
+            <label>Perros</label>
+            <div style="display:flex; gap:10px; align-items:center;">
+                <input type="number" id="perros" value="0" min="0" style="width:60px; text-align:center;">
+            </div>
+        </div>
+
+        <!-- GATOS -->
+        <div class="contador">
+            <label>Gatos</label>
+            <div style="display:flex; gap:10px; align-items:center;">
+                <input type="number" id="gatos" value="0" min="0" style="width:60px; text-align:center;">
+
+            </div>
+        </div>
+
+        <div class="contador">
+            <label>Pájaros</label>
+            <div style="display:flex; gap:10px; align-items:center;">
+                <input type="number" id="pajaros" value="0" min="0" style="width:60px; text-align:center;">
+
+            </div>
+        </div>
+
+        <div class="contador">
+            <label>Hámsters</label>
+            <div style="display:flex; gap:10px; align-items:center;">
+                <input type="number" id="hamsters" value="0" min="0" style="width:60px; text-align:center;">
+            </div>
+        </div>
+
+        <h3>¿Los animales se entregan vacunados?</h3>
+        <div class="estado">
+            <label><input type="radio" name="vacunados"> Sí</label>
+            <label><input type="radio" name="vacunados"> No</label>
+            <label><input type="radio" name="vacunados"> Depende</label>
+            <label><input type="radio" name="vacunados"> Otro</label>
+        </div>
+        <input type="text" placeholder="Si seleccionas 'Otro', especifica aquí">
+
+        <h3>¿Los animales se entregan desparasitados?</h3>
+        <div class="estado">
+            <label><input type="radio" name="desparasitados"> Sí</label>
+            <label><input type="radio" name="desparasitados"> No</label>
+            <label><input type="radio" name="desparasitados"> Depende</label>
+            <label><input type="radio" name="desparasitados"> Otro</label>
+        </div>
+        <input type="text" placeholder="Si seleccionas 'Otro', especifica aquí">
+
+        <br><br>
+        <button>REGISTRARSE</button>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
