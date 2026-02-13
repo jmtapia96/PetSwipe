@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar mascota</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <button id="btn-subir">↑</button>
+
+    <aside class="sidebar collapsed" id="sidebar">
+        <div class="sidebar-header">
+            <span class="logo">PetSwipe</span>
+        </div>
+        <nav class="menu">
+            <a href="index.html" class="item"><span class="icon">#</span> <span class="text">Inicio</span></a>
+            <a href="perfilanimal.html" class="item"><span class="icon">#</span> <span class="text">Perfil</span></a>
+            <a href="carrusel.html" class="item"><span class="icon">#</span> <span class="text">Animales</span></a>
+            <a href="matches.html" class="item"><span class="icon">#</span> <span class="text">Matches</span></a>
+            <a href="registropersona.html" class="item"><span class="icon">#</span> <span class="text">Registro persona</span></a>
+            <a href="repositorioempresa.html" class="item"><span class="icon">#</span> <span class="text">Registro empresa</span></a>
+            <a href="repositorioempresa.html" class="item"><span class="icon">#</span> <span class="text">Cerrar Sesion</span></a>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header>
+            <div class="header-logos">
+                <img src="img/logo_perro.png" alt="Logo de la web">
+                <h1>Petswipe</h1>
+            </div>
+            <button id="toggle-btn">≡</button>
+        </header>
+
+        <section class="suscripcion-banner">
+            <div class="suscripcion-texto">
+                <h2>DESTACA TUS ADOPCIONES CON NUESTRO</h2>
+                <h1 class="plan-titulo">PLAN DE SUSCRIPCIÓN PUBLICITARIA</h1>
+                <ul>
+                    <li>Animales destacados en el inicio</li>
+                    <li>Aparición prioritaria en el carrusel</li>
+                    <li>Etiqueta de centro verificado</li>
+                </ul>
+            </div>
+            <div class="suscripcion-accion">
+                <p class="precio">25,99€/mes</p>
+                <img src="img/logo_PetSwipe.png" alt="Logo Mascota" class="suscripcion-img">
+            </div>
+        </section>
+
+        <section class="zona-form">
+            <div class="formulario-container">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label>Nombre mascota</label>
+                        <input type="text" name="nombre" placeholder="Ej: Canela">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Edad</label>
+                            <input type="text" name="edad" placeholder="Ej: 1493 días">
+                        </div>
+                        <div class="form-group">
+                            <label>Raza</label>
+                            <input type="text" name="raza" placeholder="Ej: Bulldog">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Sexo</label>
+                        <select name="sexo">
+                            <option value="macho">Macho</option>
+                            <option value="hembra">Hembra</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Enlace a cartilla médica</label>
+                        <input type="url" name="cartilla" placeholder="www.cartillaperro.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Vacunas recibidas</label>
+                        <input type="text" name="vacunas" placeholder="Ej: Rabia">
+                    </div>
+                    <div class="form-group">
+                        <label>Pareja</label>
+                        <input type="text" name="pareja" placeholder="Ej: Mango">
+                    </div>
+                    <button type="submit" class="btn-registrar">REGISTRAR MASCOTA</button>
+                </form>
+            </div>
+
+            <aside class="perfil-sidebar-info">
+                <div class="foto-perfil-placeholder">
+                    <img src="img/perro1.jpeg" alt="Foto mascota">
+                    <p>Cambia logo mascota</p>
+                </div>
+                <div class="login-prompt">
+                    <p>¿Tienes una cuenta?<br><a href="#">Inicia sesión</a></p>
+                </div>
+            </aside>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-logo">
+                <img src="img/logo_PetSwipe.png" alt="Logo PetSwipe">
+            </div>
+            <div class="footer-contacto">
+                <h3>CONTACTO</h3>
+                <p class="contacto-item"><img src="img/logo facebook (1).png" alt="FB"> petswipe</p>
+                <p class="contacto-item"><img src="img/logo ig (2).png" alt="IG"> @petswipeoficial</p>
+                <p class="contacto-item"><img src="img/logo gmail (2).png" alt="Mail"> petswipe@gmail.com</p>
+            </div>
+            <div class="footer-copy">
+                <p>©2025 Todos los derechos reservados. Petswipe® es una marca registrada de 1º DAW B Group [cite: 146-147].</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -5,31 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetSwipe</title>
     <link rel="stylesheet" href="style/style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
+
+
 <body>
+    <button id="btn-subir">↑</button>
+
     <aside class="sidebar collapsed" id="sidebar">
         <div class="sidebar-header">
             <span class="logo">PetSwipe</span>
         </div>
         <nav class="menu">
-            <a href="#" class="item"><span class="icon">#</span> <span class="text">Inicio</span></a>
-            <a href="#" class="item"><span class="icon">#</span> <span class="text">Perfil</span></a>
-            <a href="#" class="item"><span class="icon">#</span> <span class="text">Animales</span></a>
-            <a href="#" class="item"><span class="icon">#</span> <span class="text">Matches</span></a>
-            <a href="#" class="item"><span class="icon">#</span> <span class="text">Cerrar Sesion</span></a>
+            <a href="index.html" class="item"><span class="icon">#</span> <span class="text">Inicio</span></a>
+            <a href="perfilanimal.html" class="item"><span class="icon">#</span> <span class="text">Perfil</span></a>
+            <a href="carrusel.html" class="item"><span class="icon">#</span> <span class="text">Animales</span></a>
+            <a href="matches.html" class="item"><span class="icon">#</span> <span class="text">Matches</span></a>
+            <a href="registropersona.html" class="item"><span class="icon">#</span> <span class="text">Registro persona</span></a>
+            <a href="repositorioempresa.html" class="item"><span class="icon">#</span> <span class="text">Registro empresa</span></a>
+            <a href="repositorioempresa.html" class="item"><span class="icon">#</span> <span class="text">Cerrar Sesion</span></a>
         </nav>
     </aside>
     <div class="main-wrapper">
     <header>
+        
         <div class="header-logos">
                 <img src="img/logo_perro.png" alt="Logo de la web">
-                <img src="img/logo_nombre.png" alt="PetSwipe">
+                <h1>Petswipe</h1>
         </div>
             <button id="toggle-btn">≡</button>
-        <img src="img/logo_alargado_sin_fondo.png" alt="Logo de la web">
     </header>
-    <img src="img/animales_index.jpg" alt="Foto portada">
+    <section class="hero">
+    <div class="hero-contenido">
+        <h1>Unete a la familia<br>registrandote con nosotros.</h1>
+        <a href="registrarse.html" class="hero-btn">Registrarse</a>
+    </div>
+</section>
+
     <div class="inicio">
         <h2>Seguimos tres valores:</h2>
         <div class="valores">
@@ -38,25 +50,69 @@
             <p class="valor dedicacion">Dedicación</p>
         </div>
     </div>
-    <p>CONOCE A NUESTRAS PROTECTORAS</p>
-    <img src="img/animales_index.jpg" alt="Foto portada">
-    <div class="inicio">
-        <p>Somos un grupo amantes de los animales , con ganas de compartir 
-            nuestros gustos con los demas</p>
-        <img src="img/animales_index.jpg" alt="Foto portada">
+    
+    <section class="seccion-protectoras">
+    <div class="protectoras-contenido">
+        <h2>Conoce a nuestras<br>confiables protectoras</h2>
+        <a href="#" class="protectoras-btn">Ver fotos</a>
     </div>
-    <div class="inicio">
-        <p>Se un amante de los animales con nosotros</p>
-        <img src="img/animales_index.jpg" alt="Foto portada">
+</section>
+
+<section class="bloque-animales">
+    <div class="texto-columna">
+        <p>Somos un grupo amantes de los animales, con ganas de compartir nuestros gustos con los demás</p>
+        <a href="https://arcadenoe.org/" class="btn-animales">Saber más</a>
     </div>
-    <footer>
+    <div class="imagen">
+        <img src="img/perros_corriendo.jpg" alt="Animales">
+    </div>
+</section>
+
+<section class="bloque-animales">
+    <div class="texto-columna">
+        <p>Sé un amante de los animales con nosotros</p>
+        <a href="registropersona.html" class="btn-animales">Únete ahora</a>
+    </div>
+    <div class="imagen">
+        <img src="img/perro_manta.webp" alt="Animales">
+    </div>
+</section>
+
+<footer class="footer">
+
+    <div class="footer-logo">
         <img src="img/logo_PetSwipe.png" alt="Logo PetSwipe">
+    </div>
+
+    <div class="footer-contacto">
+        <h3>CONTACTO</h3>
+
+    <p class="contacto-item">
+        <img src="img/logo facebook (1).png" alt="Facebook">
+            petswipe 
+
+    </p>
+    <p class="contacto-item">
+        <img src="img/logo ig (2).png" alt="Instagram">
+            @petswipeoficial 
+
+    </p>
+    <p class="contacto-item">
+        <img src="img/logo gmail (2).png" alt="Gmail">
+            petswipe@gmail.com 
+
+    </p>
+    </div>
+
+    <div class="footer-copy">
         <p>
-            ©2025 Todos los derechos reservados.
-            Petswipe® es una marca registrada de 1ºDAW B Group.
-            Petswipe y su logotipo son marcas comerciales de 1º DAW B.
+            ©2025 Todos los derechos reservados. Petswipe® es una marca registrada de
+            1º DAW B Group. Petswipe y su logotipo son marcas comerciales de 1º DAW B.
         </p>
-    </footer>
+    </div>
+
+</footer>
+
 </body>
 
 </html>

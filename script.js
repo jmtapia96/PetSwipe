@@ -10,3 +10,12 @@ btn.addEventListener('click', () => {
         btn.innerText = 'X';
     }
 });
+
+const btnSubir = document.getElementById("btn-subir");
+
+btnSubir.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
