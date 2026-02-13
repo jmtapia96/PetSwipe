@@ -324,8 +324,8 @@ footer{
 .contacto-item {
     display: flex;
     align-items: center;
-    gap: 8px;            
-    justify-content: flex-start; 
+    gap: 8px;
+    justify-content: flex-start;
 }
 
 .contacto-item img {
@@ -385,18 +385,18 @@ footer{
     }
 }
 
-/* --- ESTILOS ESPECÍFICOS PARA MATCHES --- */
+/*MATCHES*/
 
 .matches-container {
     padding: 40px;
     display: flex;
     justify-content: center;
-    background-color: #faf3e0; /* Color crema del fondo del mockup */
+    background-color: #faf3e0;
 }
 
 .matches-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas como en el PDF */
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     max-width: 1100px;
     width: 100%;
@@ -404,8 +404,8 @@ footer{
 
 .match-card {
     position: relative;
-    aspect-ratio: 1 / 1; /* Mantiene las tarjetas cuadradas */
-    border-radius: 45px; /* Bordes muy redondeados según mockup */
+    aspect-ratio: 1 / 1; /*Sirve para mantener las cartas correctas*/
+    border-radius: 45px; /*Para redondear los bordes*/
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
@@ -422,7 +422,7 @@ footer{
     left: 0;
     right: 0;
     padding: 20px;
-    background: linear-gradient(transparent, rgba(0,0,0,0.7)); /* Degradado para leer el texto blanco */
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
     color: white;
     font-family: 'League Spartan', sans-serif;
 }
@@ -438,11 +438,11 @@ footer{
 }
 
 .status-adoptado {
-    color: #ff4d4d; /* Rojo para el texto de "Ya adoptado" [cite: 127] */
+    color: #ff4d4d;
     font-weight: bold;
 }
 
-/* Responsividad para que no se rompa en pantallas pequeñas */
+/* Para hacerlo responsive */
 @media (max-width: 992px) {
     .matches-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -459,7 +459,7 @@ footer{
     }
 }
 
-/* --- ESTILOS PÁGINA PERFIL ANIMAL (REGISTRO) --- */
+/* PERFIL ANIMAL */
 
 .suscripcion-banner {
     background-color: #0097b2;
@@ -483,7 +483,7 @@ footer{
 
 .suscripcion-img {
     width: 150px;
-    filter: brightness(0) invert(1); /* Pone el logo en blanco si es necesario */
+    filter: brightness(0) invert(1);
 }
 
 .zona-form {
@@ -519,7 +519,7 @@ footer{
     color: #333;
 }
 
-.formulario-container input, 
+.formulario-container input,
 .formulario-container select {
     width: 100%;
     padding: 10px;
@@ -573,7 +573,7 @@ footer{
     }
 }
 
-/* --- ESTILOS CARRUSEL / SWIPE --- */
+/*CARRUSEL*/
 
 .carrusel-container {
     background-color: #faf3e0;
@@ -584,7 +584,7 @@ footer{
     min-height: 80vh;
 }
 
-/* Buscador [cite: 136] */
+
 .search-box {
     width: 100%;
     max-width: 400px;
@@ -619,7 +619,7 @@ footer{
     border-radius: 0 0 20px 20px;
     list-style: none;
     padding: 0;
-    display: none; /* Se activa con JS */
+    display: none;
     z-index: 10;
 }
 
@@ -629,7 +629,7 @@ footer{
     cursor: pointer;
 }
 
-/* Tarjeta Swipe [cite: 138, 161] */
+
 .swipe-section {
     display: flex;
     flex-direction: column;
@@ -651,7 +651,7 @@ footer{
     box-shadow: 10px 10px 0px rgba(0,0,0,0.1);
     overflow: hidden;
     position: relative;
-    transform: rotate(2deg); /* Efecto visual del mockup */
+    transform: rotate(2deg);
 }
 
 .pet-photo {
@@ -697,15 +697,14 @@ footer{
     color: #666;
 }
 
-/* Contenedor relativo para apilar las cartas */
+
 .deck-container {
     position: relative;
     width: 320px;
-    height: 480px; /* Ajusta según el alto de tus fotos */
+    height: 480px;
     margin-bottom: 20px;
 }
 
-/* Estilo base de todas las tarjetas en el carrusel */
 .swipe-card {
     position: absolute;
     width: 100%;
@@ -716,24 +715,79 @@ footer{
     transition: transform 0.3s ease;
 }
 
-/* Tarjeta principal (la de delante) */
+/* primera tarjeta */
 #card-actual {
     z-index: 2;
-    transform: rotate(2deg); /* Ligera inclinación como en el mockup [cite: 138] */
+    transform: rotate(2deg);
 }
 
-/* Tarjeta de detrás (decorativa) */
+/* tarjeta de detras, solo decoracion*/
 .card-back {
     z-index: 1;
     height: 100%;
-    background-color: #e0e0e0; /* Un gris claro para diferenciarla */
-    transform: rotate(-3deg) translate(-10px, -5px); /* Inclinación opuesta */
+    background-color: #e0e0e0;
+    transform: rotate(-3deg) translate(-10px, -5px);
     border: 1px solid #ddd;
 }
 
-/* Ajuste del texto de la protectora para que no se solape */
 .protectora-name {
     position: relative;
     z-index: 3;
     margin-top: 10px;
+}
+
+/* REGISTRO PERSONA / EMPRESA */
+.titulo-registro {
+    color: #0097b2;
+    margin-bottom: 20px;
+}
+
+.input-full {
+    width: 100% !important;
+}
+
+.estado-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 10px 0 20px 0;
+}
+
+.avatar-circle {
+    width: 120px;
+    height: 120px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.link-perfil {
+    display: block;
+    font-size: 0.9rem;
+    color: #0097b2;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.link-perfil.delete { color: #ff4d4d; }
+
+.contadores-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.contador-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.contador-item input {
+    width: 50px !important;
+    margin-bottom: 0 !important;
 }

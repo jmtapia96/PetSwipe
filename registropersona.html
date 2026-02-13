@@ -3,19 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetSwipe - Animales</title>
+    <title>Registro Usuario</title>
     <link rel="stylesheet" href="style/style.css">
     <script src="script.js" defer></script>
-    
 </head>
-
 <body>
     <button id="btn-subir">↑</button>
 
     <aside class="sidebar collapsed" id="sidebar">
-        <div class="sidebar-header">
-            <span class="logo">PetSwipe</span>
-        </div>
+        <div class="sidebar-header"><span class="logo">PetSwipe</span></div>
         <nav class="menu">
             <a href="index.html" class="item"><span class="icon">#</span> <span class="text">Inicio</span></a>
             <a href="perfilanimal.html" class="item"><span class="icon">#</span> <span class="text">Perfil</span></a>
@@ -36,36 +32,47 @@
             <button id="toggle-btn">≡</button>
         </header>
 
-        <main class="carrusel-container">
-            
-            <div class="search-box">
-                <div class="search-input-wrapper">
-                    <span class="search-icon">🔍</span>
-                    <input type="text" id="input-busqueda" placeholder="Escribe aquí">
-                </div>
+        <main class="zona-form">
+            <div class="formulario-container">
+                <h2 class="titulo-registro">Regístrate</h2>
+                <form action="#">
+                    <input type="text" placeholder="Nombre de usuario" class="input-full">
+                    <input type="email" placeholder="Correo electrónico" class="input-full">
+                    <div class="form-row">
+                        <input type="password" placeholder="Contraseña">
+                        <input type="password" placeholder="Confirmar contraseña">
+                    </div>
+
+                    <h3>Datos personales</h3>
+                    <input type="text" placeholder="Nombre completo" class="input-full">
+                    <div class="form-row">
+                        <input type="number" placeholder="Edad">
+                        <input type="number" placeholder="Nº de mascotas anteriores">
+                    </div>
+
+                    <h3>Estado laboral</h3>
+                    <div class="estado-group">
+                        <label><input type="radio" name="estado"> Desempleado</label>
+                        <label><input type="radio" name="estado"> Trabajo a tiempo completo</label>
+                        <label><input type="radio" name="estado"> Trabajo a tiempo parcial</label>
+                        <label><input type="radio" name="estado"> Estudiante</label>
+                    </div>
+
+                    <input type="text" placeholder="Alergias (opcional)" class="input-full">
+                    <button type="submit" class="btn-registrar">REGISTRARSE</button>
+                </form>
             </div>
 
-            <section class="swipe-section">
-                <h2 class="swipe-text">DESLIZA!</h2>
-                
-                <div class="deck-container">
-                    <div class="swipe-card card-back"></div>
-                    
-                    <div class="swipe-card" id="card-actual">
-                        <img src="img/perro2.jpeg" alt="Mascota" class="pet-photo">
-                        <div class="card-content">
-                            <p class="info-link">Información animal</p>
-                            <div class="action-buttons">
-                                <button class="btn-action btn-dislike">✖</button>
-                                <button class="btn-action btn-like">❤️</button>
-                            </div>
-                        </div>
-                    </div>
+            <aside class="perfil-sidebar-info">
+                <div class="foto-perfil-placeholder">
+                    <div class="avatar-circle"></div>
+                    <a href="#" class="link-perfil">Cambiar foto de perfil</a>
+                    <a href="#" class="link-perfil delete">Eliminar foto</a>
                 </div>
-                
-                <p class="protectora-name">Protectora de este animal: ...</p>
-            </section>
-
+                <div class="login-prompt">
+                    <p>¿Tienes una cuenta?<br><a href="#">Inicia sesión</a></p>
+                </div>
+            </aside>
         </main>
 
         <footer class="footer">

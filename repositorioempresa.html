@@ -3,19 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetSwipe - Animales</title>
+    <title>Registro Empresa</title>
     <link rel="stylesheet" href="style/style.css">
     <script src="script.js" defer></script>
-    
 </head>
-
 <body>
     <button id="btn-subir">↑</button>
 
     <aside class="sidebar collapsed" id="sidebar">
-        <div class="sidebar-header">
-            <span class="logo">PetSwipe</span>
-        </div>
+        <div class="sidebar-header"><span class="logo">PetSwipe</span></div>
         <nav class="menu">
             <a href="index.html" class="item"><span class="icon">#</span> <span class="text">Inicio</span></a>
             <a href="perfilanimal.html" class="item"><span class="icon">#</span> <span class="text">Perfil</span></a>
@@ -36,39 +32,39 @@
             <button id="toggle-btn">≡</button>
         </header>
 
-        <main class="carrusel-container">
-            
-            <div class="search-box">
-                <div class="search-input-wrapper">
-                    <span class="search-icon">🔍</span>
-                    <input type="text" id="input-busqueda" placeholder="Escribe aquí">
-                </div>
-            </div>
-
-            <section class="swipe-section">
-                <h2 class="swipe-text">DESLIZA!</h2>
-                
-                <div class="deck-container">
-                    <div class="swipe-card card-back"></div>
+        <main class="zona-form">
+            <div class="formulario-container">
+                <h2 class="titulo-registro">Registro de Empresa</h2>
+                <form action="#">
+                    <input type="text" placeholder="Nombre de empresa" class="input-full">
+                    <input type="email" placeholder="Correo electrónico" class="input-full">
                     
-                    <div class="swipe-card" id="card-actual">
-                        <img src="img/perro2.jpeg" alt="Mascota" class="pet-photo">
-                        <div class="card-content">
-                            <p class="info-link">Información animal</p>
-                            <div class="action-buttons">
-                                <button class="btn-action btn-dislike">✖</button>
-                                <button class="btn-action btn-like">❤️</button>
-                            </div>
-                        </div>
+                    <h3>Datos de empresa</h3>
+                    <input type="text" placeholder="Dirección" class="input-full">
+                    <div class="form-row">
+                        <input type="number" placeholder="Año creación">
+                        <input type="text" placeholder="Nº Registro oficial">
                     </div>
-                </div>
-                
-                <p class="protectora-name">Protectora de este animal: ...</p>
-            </section>
 
+                    <h3>Tipo de entidad</h3>
+                    <div class="estado-group">
+                        <label><input type="radio" name="tipo"> Protectora</label>
+                        <label><input type="radio" name="tipo"> Refugio</label>
+                        <label><input type="radio" name="tipo"> Asociación</label>
+                    </div>
+
+                    <h3>Animales en disposición</h3>
+                    <div class="contadores-grid">
+                        <div class="contador-item"><span>Perros</span> <input type="number" value="0"></div>
+                        <div class="contador-item"><span>Gatos</span> <input type="number" value="0"></div>
+                        <div class="contador-item"><span>Pájaros</span> <input type="number" value="0"></div>
+                    </div>
+
+                    <button type="submit" class="btn-registrar">REGISTRAR EMPRESA</button>
+                </form>
+            </div>
         </main>
-
-        <footer class="footer">
+                <footer class="footer">
             <div class="footer-logo">
                 <img src="img/logo_PetSwipe.png" alt="Logo PetSwipe">
             </div>
