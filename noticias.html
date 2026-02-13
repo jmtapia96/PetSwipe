@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetSwipe - Noticias y Consejos</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script.js" defer></script>
+    <!--FAVICON-->
+    <link rel="icon" href="img/logo_perro.png">
+    <link rel="apple-touch-icon" href="img/logo_perro.png">
+    <link rel="shortcut icon" href="img/logo_perro.png">
+</head>
+<body>
+    <button id="btn-subir">↑</button>
+
+    <aside class="sidebar collapsed" id="sidebar">
+        <div class="sidebar-header">
+            <span class="logo">PetSwipe</span>
+        </div>
+        <nav class="menu">
+            <a href="index.html" class="item"><span class="icon">#</span> <span class="text">Inicio</span></a>
+            <a href="perfilanimal.html" class="item"><span class="icon">#</span> <span class="text">Perfil</span></a>
+            <a href="carrusel.html" class="item"><span class="icon">#</span> <span class="text">Animales</span></a>
+            <a href="matches.html" class="item"><span class="icon">#</span> <span class="text">Matches</span></a>
+            <a href="registropersona.html" class="item"><span class="icon">#</span> <span class="text">Registro persona</span></a>
+            <a href="repositorioempresa.html" class="item"><span class="icon">#</span> <span class="text">Registro empresa</span></a>
+            <a href="noticias.html" class="item"><span class="icon">#</span> <span class="text">noticias</span></a>
+            <a href="" class="item"><span class="icon">#</span> <span class="text">Cerrar Sesion</span></a>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header>
+            <div class="header-logos">
+                <img src="img/logo_perro.png" alt="Logo">
+                <img src="img/logo_nombre.png" alt="PetSwipe">
+            </div>
+            <button id="toggle-btn">≡</button>
+        </header>
+
+        <main class="noticias-container">
+            <section class="noticias-seccion">
+                <h2>Top 5 Protectoras del Mes</h2>
+                <p>Estas son las protectoras con más matches y adopciones exitosas en nuestra plataforma:</p>
+                <ol class="lista-top">
+                    <li>Huellas de Esperanza - Madrid</li>
+                    <li>Refugio El Amigo Fiel - Sevilla</li>
+                    <li>Asociación Bigotes y Colas - Barcelona</li>
+                    <li>Santuario Patitas Felices - Valencia</li>
+                    <li>Protectora Mar y Monte - Málaga</li>
+                </ol>
+            </section>
+
+            <hr class="separador">
+
+            <section class="noticias-seccion">
+                <h2>Animales curiosos en adopción</h2>
+                <p>Aunque los perros y gatos son los reyes, estos animales menos comunes también buscan un hogar:</p>
+                <ul class="lista-comunes">
+                    <li>Hurones de rescate</li>
+                    <li>Erizos africanos</li>
+                    <li>Geckos leopardo</li>
+                    <li>Cerdos vietnamitas mini</li>
+                    <li>Chinchillas</li>
+                </ul>
+            </section>
+
+            <section class="noticias-seccion">
+                <h2>¿Por qué adoptar? Ventajas y Desventajas</h2>
+                <table class="tabla-info">
+                    <thead>
+                        <tr>
+                            <th>Aspecto</th>
+                            <th>Ventajas</th>
+                            <th>Desventajas / Retos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Coste</strong></td>
+                            <td>Suele ser más económico que comprar y vienen vacunados.</td>
+                            <td>Gastos veterinarios imprevistos iniciales.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Comportamiento</strong></td>
+                            <td>Muchos ya están educados y son muy agradecidos.</td>
+                            <td>Pueden tener traumas previos que requieren paciencia.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Espacio</strong></td>
+                            <td>Puedes elegir un animal cuyo tamaño se adapte a tu casa.</td>
+                            <td>Adaptar el hogar para evitar destrozos.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Satisfacción</strong></td>
+                            <td>Salvas una vida y luchas contra el abandono.</td>
+                            <td>Compromiso a largo plazo (10-15 años).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-logo">
+                <img src="img/logo_PetSwipe.png" alt="Logo PetSwipe">
+            </div>
+            <div class="footer-copy">
+                <p>©2025 Todos los derechos reservados. Petswipe® es una marca registrada de 1º DAW B Group.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

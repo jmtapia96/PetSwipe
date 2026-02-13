@@ -791,3 +791,80 @@ footer{
     width: 50px !important;
     margin-bottom: 0 !important;
 }
+
+/*NOTICIAS*/
+
+.noticias-container {
+    padding: 40px;
+    background-color: #faf3e0;
+    min-height: 80vh;
+}
+
+.noticias-seccion {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.noticias-seccion h2 {
+    color: #0097b2;
+    margin-bottom: 15px;
+    border-left: 5px solid #0097b2;
+    padding-left: 15px;
+}
+
+
+.lista-top, .lista-comunes {
+    line-height: 2;
+    font-size: 1.1rem;
+    padding-left: 40px;
+}
+
+.lista-top li::marker {
+    color: #0097b2;
+    font-weight: bold;
+}
+
+
+.tabla-info {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+}
+
+.tabla-info th, .tabla-info td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+
+.tabla-info th {
+    background-color: #0097b2;
+    color: white;
+}
+
+.tabla-info tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.separador {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 40px auto;
+    width: 50%;
+}
+
+/* queda responsive */
+@media (max-width: 768px) {
+    .noticias-container {
+        padding: 20px;
+    }
+    .tabla-info {
+        font-size: 0.8rem;
+    }
+}
